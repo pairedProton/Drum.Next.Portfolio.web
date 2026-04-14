@@ -1,9 +1,10 @@
 import React from 'react'
+import HeroSection from "./_sections/HeroSection/HeroSection"
 
-const page = () => {
+export default function Page() {
   return (
-    <div></div>
+    <main>
+      <HeroSection />
+    </main>
   )
 }
-
-export default page
