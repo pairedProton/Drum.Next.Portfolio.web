@@ -173,6 +173,13 @@ const TheRoadGsap = ({ children }) => {
     tl2.to(".sec2MultiTitle", {
       y: 0,
     });
+
+    tl2.to(".theRoadHeading", {
+      opacity: 1,
+      ease: "power1.inOut",
+      duration: 0.5,
+      // delay:.5,
+    });
   });
 
   return <>{children}</>;

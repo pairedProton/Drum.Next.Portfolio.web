@@ -14,7 +14,7 @@ export default function SmoothScroll({ children }) {
       lerp: 0.08,
       smoothWheel: true,
       smoothTouch: false,
-      wheelMultiplier: .9,
+      wheelMultiplier: 1,
       // touchMultiplier: 2,
       // normalizeWheel: false,
       // syncTouch: false,

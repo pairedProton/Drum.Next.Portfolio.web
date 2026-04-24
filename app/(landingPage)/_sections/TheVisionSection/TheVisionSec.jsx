@@ -71,7 +71,7 @@ const TheVisionSec = () => {
                 deliver value at every level of the supply chain.
               </p>
             </div>
-            <div className="theVisionCarouselRightSec w-[70%] relative mt-4 ">
+            <div className="theVisionCarouselRightSec w-[70%] relative mt-4">
               <Swiper
                 spaceBetween={50}
                 slidesPerView={3}

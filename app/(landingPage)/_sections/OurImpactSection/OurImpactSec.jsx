@@ -55,12 +55,19 @@ const OurImpactSec = () => {
       scrollTrigger: {
         trigger: ".ourImpactSec",
         start: "top top",
-        end: "+=100%",
+        end: "+=150%",
         scrub: 4,
         pin: true,
         // markers: true,
       },
     });
+
+    // tl.to(".ourImpactHeading", {
+    //   opacity: 1,
+    //   ease: "power1.inOut",
+    //   duration: 0.2,
+    //   // delay:.5,
+    // });
   }, [])
 
   return (

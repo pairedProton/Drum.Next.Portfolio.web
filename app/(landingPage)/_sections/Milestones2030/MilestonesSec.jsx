@@ -53,6 +53,12 @@ useGSAP(() => {
     ease: "power3.inOut",
   });
 
+  tl.to(".milestoneCard", {
+    opacity: 1,
+    // duration: 1,
+    ease: "power3.inOut",
+  });
+
 
 
 

@@ -9,21 +9,25 @@ import OurImpactSec from './_sections/OurImpactSection/OurImpactSec'
 import TheRoadSec from './_sections/The2023RoadSection/TheRoadSec'
 import MilestonesSec from './_sections/Milestones2030/MilestonesSec'
 import TheVisionSec from './_sections/TheVisionSection/TheVisionSec'
+import GrowthSec from './_sections/GrowthWithSection/GrowthSec'
+import TheInvestmentSec from './_sections/TheInvestmentSection/TheInvestmentSec'
 
 
 export default function Page() {
   return (
     <main  className='overflow-x-hidden' >
       <HeroSection />
-      {/* <TextRevealSection />
+      <TextRevealSection />
       <LetsUnderstandSec />
       <OurProposedSolSec />
       <The4VerticalEngineSec />
       <ProvenScaleSec />
       <OurImpactSec />
       <TheRoadSec />
-      <MilestonesSec /> */}
+      <MilestonesSec />
       <TheVisionSec />
+      <GrowthSec />
+      <TheInvestmentSec />
     </main>
   )
 }

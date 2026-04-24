@@ -17,7 +17,7 @@ const Navbar = () => {
         {/* Navbar Menu and CTA */}
         <div className={`flex justify-between items-center ${menuGap}`}>
             <NavbarMenu menuGap={menuGap}/>
-            <NavbarCTA />
+            <NavbarCTA  bg={"green"} con={""} text={""} icon={""} />
         </div>
     </nav>
   )

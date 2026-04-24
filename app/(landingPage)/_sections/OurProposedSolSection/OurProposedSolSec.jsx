@@ -96,6 +96,13 @@ const OurProposedSolSec = () => {
         duration: 0.5,
         // delay:.5,
       });
+
+      t5b.to(".ourProposedHeading", {
+        opacity: 1,
+        ease: "power1.inOut",
+        duration: 0.2,
+        // delay:.5,
+      });
       // t5b.to(".sec5boxes3", {
       //   y: "-=100%",
       //   ease: "power1.inOut",
@@ -119,12 +126,12 @@ const OurProposedSolSec = () => {
     }
   });
   return (
-    <section className=" ourProposedSec w-full h-screen flex justify-center items-center relative border-2 border-primary-green bg-background overflow-hidden rounded-t-[8rem]" >
+    <section className=" ourProposedSec w-full h-screen flex justify-center items-center relative border-2 border-primary-green bg-background overflow-hidden rounded-t-[8rem]">
       <div className="container flex flex-col justify-center items-center p-10 gap-8">
         {/* Lets Understand Section Heading */}
         <header className=" flex flex-col gap-0 justify-center items-center mb-8 text-primary-green">
           <h2 className="text-4xl font-bold heading">Our Proposed Solution</h2>
-          <h3 className="text-4xl font-extralight lightText">
+          <h3 className=" ourProposedHeading text-4xl font-extralight lightText">
             Turning Fragmentation into High -Margin Integration
           </h3>
         </header>
@@ -133,10 +140,10 @@ const OurProposedSolSec = () => {
         <div className="w-full h-auto flex  flex-col justify-center items-center relative">
           {/* lapScreenSec */}
           <ul className="relative  w-230 h-100 flex flex-col justify-center items-center overflow-hidden">
-            <div className="absolute top-0 left-0 w-full h-full" >
-            {OurProposedSolSecData.map((card, index) => (
-              <OurProposedCard key={index} card={card} index={index} />
-            ))}
+            <div className="absolute top-0 left-0 w-full h-full">
+              {OurProposedSolSecData.map((card, index) => (
+                <OurProposedCard key={index} card={card} index={index} />
+              ))}
             </div>
           </ul>
 
