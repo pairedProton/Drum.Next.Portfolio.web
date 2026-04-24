@@ -8,6 +8,8 @@
   --secondary-green: #1E6035;
   --tertiary-green: #77EDBF;
   --background-gradient: linear-gradient(to right, var(--primary-green), var(--secondary-green));
+  --primary-yellow: #E8E268;
+  --secondary-yellow: #A1A76A;
 }
 
 @theme inline {
@@ -16,7 +18,8 @@
   --color-primary-green: var(--primary-green);
   --color-secondary-green: var(--secondary-green);
   --color-tertiary-green: var(--tertiary-green);
-
+  --color-primary-yellow: var(--primary-yellow);
+  --color-secondary-yellow: var(--secondary-yellow);
 
   --font-heading: var(--font-league-spartan);
   --font-body: var(--font-montserrat);
