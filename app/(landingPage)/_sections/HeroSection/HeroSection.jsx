@@ -5,7 +5,7 @@ import { GoArrowUpRight } from "react-icons/go";
 
 const HeroSection = () => {
   return (
-    <div className="w-full h-screen relative bg-[url('/images/home/hero/herobanner1.png')] bg-no-repeat bg-cover bg-center ">
+    <div className="w-full h-screen relative bg-[url('/images/home/hero/herobanner4.png')] bg-no-repeat bg-cover bg-center ">
       {/* <Image
         src="/images/home/hero/herobanner1.png"
         alt="Hero Section Image"
