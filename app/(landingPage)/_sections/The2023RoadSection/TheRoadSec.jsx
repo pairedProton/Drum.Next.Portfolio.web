@@ -55,10 +55,10 @@ const TheRoadSec = () => {
 
         {/* heading section  */}
         <div className="theRoadHeading flex flex-col gap-0 justify-center items-start mb-14 px-10 pt-10">
-          <h2 className="text-4xl font-bold heading text-white">
+          <h2 className=" font-bold heading text-white">
             The 2030 Roadmap
           </h2>
-          <h3 className="text-4xl font-extralight lightText text-white w-[90%]">
+          <h3 className=" lightText text-white w-[90%]">
             A strategic timeline to transition from regional excellence to
             India’s dominant agri-tech ecosystem.
           </h3>

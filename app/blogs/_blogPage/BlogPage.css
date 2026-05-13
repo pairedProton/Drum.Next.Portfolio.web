@@ -1,0 +1,207 @@
+/* ================================
+   BLOG PAGE STYLES
+================================ */
+
+/* Badge */
+.blogPage__badge {
+  display: inline-block;
+  padding: 6px 20px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--tertiary-green);
+  border: 1px solid rgba(119, 237, 191, 0.25);
+  background: rgba(119, 237, 191, 0.06);
+}
+
+/* Tag Buttons */
+.blogPage__tagBtn {
+  padding: 7px 20px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.06);
+  border: 1.5px solid rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+  transition: all 0.25s ease;
+  white-space: nowrap;
+}
+
+.blogPage__tagBtn:hover {
+  color: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.blogPage__tagBtn--active {
+  color: var(--primary-green);
+  background: #fff;
+  border-color: #fff;
+  font-weight: 600;
+}
+
+.blogPage__tagBtn--active:hover {
+  color: var(--primary-green);
+  background: #fff;
+}
+
+/* Blog Card — Editorial Layout */
+.blogPage__card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 16px;
+  background: #fff;
+  overflow: hidden;
+  transition: all 0.35s ease;
+  cursor: default;
+}
+
+.blogPage__card:hover {
+  transform: translateY(-4px);
+  box-shadow:
+    0 20px 50px rgba(0, 0, 0, 0.12),
+    0 0 0 1px rgba(255, 255, 255, 0.06);
+}
+
+/* Card Image */
+.blogPage__cardImage {
+  width: 100%;
+  height: 280px;
+  overflow: hidden;
+}
+
+/* Card Content Area */
+.blogPage__cardContent {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 20px 24px 24px;
+  flex: 1;
+}
+
+/* Meta Row: TAG • DATE */
+.blogPage__cardMeta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.blogPage__cardMetaTag {
+  font-family: var(--font-secondary);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--secondary-green);
+}
+
+.blogPage__cardMetaDot {
+  font-size: 10px;
+  color: var(--primary-green);
+  opacity: 0.35;
+}
+
+.blogPage__cardMetaDate {
+  font-family: var(--font-secondary);
+  font-size: 12.5px;
+  font-weight: 400;
+  color: var(--primary-green);
+  opacity: 0.55;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+/* Title */
+.blogPage__cardTitle {
+  font-family: var(--font-body);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--primary-green);
+  line-height: 1.35;
+  margin: 0;
+}
+
+/* Description */
+.blogPage__cardDesc {
+  font-family: var(--font-secondary);
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: var(--primary-green);
+  opacity: 0.7;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Footer Row */
+.blogPage__cardFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: auto;
+  padding-top: 12px;
+}
+
+.blogPage__cardReadTime {
+  font-family: var(--font-secondary);
+  font-size: 12.5px;
+  font-weight: 400;
+  color: var(--primary-green);
+  opacity: 0.45;
+}
+
+/* Card CTA — Pill Button */
+.blogPage__cardCTA {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 20px;
+  border-radius: 999px;
+  font-family: var(--font-secondary);
+  font-size: 13px;
+  font-weight: 600;
+  color: #fff;
+  background: var(--primary-green);
+  border: 1.5px solid var(--primary-green);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.blogPage__cardCTA:hover {
+  background: var(--secondary-green);
+  border-color: var(--secondary-green);
+  box-shadow: 0 4px 16px rgba(19, 65, 35, 0.3);
+}
+
+/* ================================
+   RESPONSIVE
+================================ */
+@media (max-width: 768px) {
+  .blogPage__header h1 {
+    font-size: 2.5rem;
+  }
+
+  .blogPage__tags {
+    gap: 8px;
+  }
+
+  .blogPage__tagBtn {
+    padding: 5px 14px;
+    font-size: 12px;
+  }
+
+  .blogPage__cardImage {
+    height: 200px;
+  }
+
+  .blogPage__cardContent {
+    padding: 16px;
+  }
+
+  .blogPage__cardTitle {
+    font-size: 1.1rem;
+  }
+}

@@ -35,8 +35,8 @@ const TheVisionSec = () => {
       <div className="container flex flex-col justify-start items-start p-10 w-full h-full">
         {/* The Vision Section Heading */}
         <div className="theVisionHeading flex flex-col gap-0 justify-start items-start mb-14 text-white">
-          <h2 className="text-4xl font-bold heading ">The Vision to Scale</h2>
-          <h3 className="text-4xl font-extralight lightText ">
+          <h2 className=" font-bold heading ">The Vision to Scale</h2>
+          <h3 className=" lightText ">
             Building the future of agriculture through strategic execution and
             institutional trust.
           </h3>
@@ -84,7 +84,7 @@ const TheVisionSec = () => {
                 loop={true}
                 centeredSlides={true}
                 modules={[Autoplay]}
-                onSlideChange={() => console.log("slide change")}
+                // onSlideChange={() => console.log("slide change")}
                 onSwiper={swiper => console.log(swiper)}
               >
                 {visionData.map((item, index) => (

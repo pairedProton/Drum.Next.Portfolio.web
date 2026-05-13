@@ -111,10 +111,10 @@ tl.to(".the4VerticalHeading", {
       <div className=" w-full h-full flex flex-col justify-center items-center  gap-8 ">
         {/* The 4 Vertical Engine Section Heading */}
         <header className="container flex flex-col gap-0 justify-center items-center mb-8 text-white ">
-          <h2 className=" the4VerticalHeading text-4xl font-bold heading">
+          <h2 className=" the4VerticalHeading font-bold heading">
             The 4 - Vertical Engine
           </h2>
-          <h3 className="text-4xl font-extralight lightText w-180 text-center ">
+          <h3 className="lightText w-180 text-center ">
             A closed - loop system designed to control quality, minimize waste,
             and maximize margin at every stage the lifecycle{" "}
           </h3>

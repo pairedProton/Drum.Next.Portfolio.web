@@ -1,0 +1,254 @@
+/* ================================
+   GALLERY MODAL / LIGHTBOX
+================================ */
+
+/* Overlay */
+.galleryModal__overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.90);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  animation: galleryModalFadeIn 0.3s ease-out forwards;
+}
+
+@keyframes galleryModalFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Close Button */
+.galleryModal__closeBtn {
+  position: absolute;
+  top: 20px;
+  right: 24px;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1.5px solid rgba(255, 255, 255, 0.2);
+  /* background: rgba(255, 255, 255, 0.08); */
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.galleryModal__closeBtn:hover {
+  background: rgba(255, 255, 255, 0.18);
+  border-color: rgba(255, 255, 255, 0.4);
+  transform: rotate(90deg);
+}
+
+/* Tag Buttons Container */
+.galleryModal__tags {
+  position: absolute;
+  top: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 6px;
+  border-radius: 999px;
+  /* background: rgba(255, 255, 255, 0.06); */
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.galleryModal__tagBtn {
+  padding: 6px 18px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: rgba(255, 255, 255, 0.6);
+  background: transparent;
+  border: 1.5px solid transparent;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  white-space: nowrap;
+}
+
+.galleryModal__tagBtn:hover {
+  color: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.galleryModal__tagBtn--active {
+  color: #134123;
+  background: #fff;
+  border-color: #fff;
+  font-weight: 600;
+}
+
+.galleryModal__tagBtn--active:hover {
+  color: #134123;
+  background: #fff;
+}
+
+/* Swiper Wrapper */
+.galleryModal__swiperWrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 1100px;
+  height: calc(100vh - 160px);
+  padding: 0 60px;
+  margin-top: 40px;
+}
+
+/* Custom Navigation Buttons */
+.galleryModal__navBtn {
+  position: absolute;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1.5px solid rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.06);
+  color: rgba(255, 255, 255, 0.8);
+  cursor: pointer;
+  transition: all 0.25s ease;
+  flex-shrink: 0;
+}
+
+.galleryModal__navBtn:hover {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.3);
+  color: #fff;
+}
+
+.galleryModal__navBtn--prev {
+  left: 8px;
+}
+
+.galleryModal__navBtn--next {
+  right: 8px;
+}
+
+.galleryModal__navBtn.swiper-button-disabled {
+  opacity: 0.25;
+  cursor: default;
+  pointer-events: none;
+}
+
+/* Swiper */
+.galleryModal__swiper {
+  width: 100%;
+  height: 100%;
+}
+
+/* Slide */
+.galleryModal__slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Image Container */
+.galleryModal__imageContainer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* Image */
+.galleryModal__image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 12px;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+/* Counter / Info */
+.galleryModal__counter {
+  position: absolute;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+.galleryModal__counterText {
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.45);
+}
+
+/* ================================
+   HIDE DEFAULT SWIPER NAV
+================================ */
+.galleryModal__swiper .swiper-button-next,
+.galleryModal__swiper .swiper-button-prev {
+  display: none !important;
+}
+
+/* ================================
+   RESPONSIVE
+================================ */
+@media (max-width: 768px) {
+  .galleryModal__tags {
+    top: 16px;
+    gap: 6px;
+    padding: 4px;
+    flex-wrap: wrap;
+    max-width: 90vw;
+    justify-content: center;
+  }
+
+  .galleryModal__tagBtn {
+    padding: 5px 12px;
+    font-size: 12px;
+  }
+
+  .galleryModal__swiperWrap {
+    padding: 0 20px;
+    margin-top: 70px;
+  }
+
+  .galleryModal__navBtn {
+    width: 36px;
+    height: 36px;
+  }
+
+  .galleryModal__navBtn--prev {
+    left: 4px;
+  }
+
+  .galleryModal__navBtn--next {
+    right: 4px;
+  }
+
+  .galleryModal__closeBtn {
+    top: 16px;
+    right: 16px;
+    width: 38px;
+    height: 38px;
+  }
+}

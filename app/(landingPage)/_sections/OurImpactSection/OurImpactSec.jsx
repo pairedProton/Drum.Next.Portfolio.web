@@ -75,8 +75,8 @@ const OurImpactSec = () => {
       <div className="container flex flex-col justify-center items-center p-10">
         {/* Our Impact Section Heading */}
         <div className="ourImpactHeading flex flex-col gap-0 justify-center items-center mb-14 ">
-          <h2 className="text-4xl font-bold heading text-secondary-green">Our Impact at Scale</h2>
-          <h3 className="text-4xl font-extralight lightText text-secondary-green">
+          <h2 className=" font-bold heading text-secondary-green">Our Impact at Scale</h2>
+          <h3 className=" lightText text-secondary-green">
             Building a resilient agricultural ecosystem through direct sourcing and strategic infrastructure.
           </h3>
         </div>

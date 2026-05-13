@@ -11,6 +11,9 @@ import MilestonesSec from './_sections/Milestones2030/MilestonesSec'
 import TheVisionSec from './_sections/TheVisionSection/TheVisionSec'
 import GrowthSec from './_sections/GrowthWithSection/GrowthSec'
 import TheInvestmentSec from './_sections/TheInvestmentSection/TheInvestmentSec'
+import NumberSec from './_sections/NumbersSection/NumberSec'
+import GallerySec from './_sections/GallerySection/GallerySec'
+import TheFutureAgriSec from './_sections/TheFutureAgriSection.jsx/TheFutureAgriSec'
 
 
 export default function Page() {
@@ -27,7 +30,10 @@ export default function Page() {
       <MilestonesSec />
       <TheVisionSec />
       <GrowthSec />
+      <NumberSec />
       <TheInvestmentSec />
+      <GallerySec />
+      <TheFutureAgriSec />
     </main>
   )
 }

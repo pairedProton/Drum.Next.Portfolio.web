@@ -2,11 +2,14 @@
 import React from 'react'
 import Image from 'next/image'
 import cart from '@/public/images/home/growth/cart.png'
-import chemical_free from "@/public/images/home/growth/chemical_free.png";
-import credit_access from "@/public/images/home/growth/credit_access.png";
-import fair_trade from "@/public/images/home/growth/fair_trade.png";
+import chemical_free from "@/public/images/home/growth/pic11.png";
+import credit_access from "@/public/images/home/growth/pic22.png";
+import fair_trade from "@/public/images/home/growth/pic33.png";
+// import chemical_free from "@/public/images/home/growth/chemical_free.png";
+// import credit_access from "@/public/images/home/growth/credit_access.png";
+// import fair_trade from "@/public/images/home/growth/fair_trade.png";
 import leaves from "@/public/images/home/growth/leaves.png";
-import mockup from "@/public/images/home/growth/mockup.png";
+import mockup from "@/public/images/home/growth/mockup1.png";
 import rupees from "@/public/images/home/growth/rupees.png";
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -193,7 +196,7 @@ useGSAP(()=>{
               })}
             </div>
             <div className="mobileCon w-full h-auto">
-              <div className="relative w-full   rounded-[2.5rem] overflow-hidden">
+              <div className="relative w-full   rounded-[1.9rem] overflow-hidden">
                 <Image
                   src={mockup}
                   alt=""

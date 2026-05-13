@@ -1,6 +1,6 @@
 import { IoArrowForwardOutline } from "react-icons/io5";
 import Image from "next/image";
-
+import Link from "next/link";
 
 export default  function LetsCard({card,index}) {
 return (
@@ -14,12 +14,12 @@ return (
     <p className="w-[80%]">
       {card.description[1]}
     </p>
-    <h5 className="flex justify-center items-center gap-2 font-bold mt-10">
+    <Link href={card.link} className="flex justify-center items-center gap-2 font-bold mt-10">
       <span>Read the full Post</span>
       <span>
         <IoArrowForwardOutline />
       </span>
-    </h5>
+    </Link>
   </div>
   <div className="w-110 h-full">
     <Image

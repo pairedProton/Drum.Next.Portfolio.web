@@ -130,8 +130,8 @@ const OurProposedSolSec = () => {
       <div className="container flex flex-col justify-center items-center p-10 gap-8">
         {/* Lets Understand Section Heading */}
         <header className=" flex flex-col gap-0 justify-center items-center mb-8 text-primary-green">
-          <h2 className="text-4xl font-bold heading">Our Proposed Solution</h2>
-          <h3 className=" ourProposedHeading text-4xl font-extralight lightText">
+          <h2 className="font-bold heading">Our Proposed Solution</h2>
+          <h3 className=" ourProposedHeading lightText">
             Turning Fragmentation into High -Margin Integration
           </h3>
         </header>

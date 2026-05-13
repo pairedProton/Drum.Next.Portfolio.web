@@ -1,0 +1,23 @@
+
+
+/* ── Number / value ── */
+
+
+
+
+/* ── 3D face positioning ── */
+.cube-face--front {
+  transform: rotateY(0deg) translateZ(250px);
+}
+
+.cube-face--right {
+  transform: rotateY(90deg) translateZ(250px);
+}
+
+.cube-face--back {
+  transform: rotateY(180deg) translateZ(250px);
+}
+
+.cube-face--left {
+  transform: rotateY(-90deg) translateZ(250px);
+}

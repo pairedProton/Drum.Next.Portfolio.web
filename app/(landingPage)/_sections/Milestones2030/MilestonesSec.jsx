@@ -70,7 +70,7 @@ useGSAP(() => {
       <div className="container flex flex-row justify-center items-center p-10  gap-12">
         {/* Our Impact Section Heading */}
         <header className="milestonesHeading">
-          <h2 className="text-4xl font-bold heading text-secondary-green">
+          <h2 className=" font-bold heading text-secondary-green">
             Milestones for 2030
           </h2>
         </header>

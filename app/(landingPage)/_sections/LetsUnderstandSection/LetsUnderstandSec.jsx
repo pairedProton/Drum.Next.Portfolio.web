@@ -4,6 +4,8 @@ import { IoArrowForwardOutline } from "react-icons/io5";
 import LetsCard from './_components/LetsCard';
 import LetsGsap from './LetsGsap';
 
+
+
 const LetsUnderstandSec = () => {
 
 const LetsCardData = [
@@ -15,6 +17,7 @@ const LetsCardData = [
       "This staggering figure represents food that spoils after harvest, before it ever reaches the customer—a critical gap in our supply chain efficiency.",
     ],
     image: "/images/home/lets-understand/post_loss.png",
+    link: "/blogs/post-harvest-loss-india-taurus-organic",
   },
   {
     id: 2,
@@ -23,6 +26,7 @@ const LetsCardData = [
       "RBI studies show Indian farmers receive only 33–50% of the final consumer price for fruits and vegetables like tomato (33%), onion (36%), potato (37%), with the rest captured by multiple middlemen layers.",
     ],
     image: "/images/home/lets-understand/farmer_margin.png",
+    link: "/blogs/why-farmers-get-lower-margins-india-taurus-organic",
   },
   {
     id: 3,
@@ -32,6 +36,7 @@ const LetsCardData = [
       "This is significantly higher than the global benchmark of about 5–6%, indicating structural inefficiencies in the movement of goods across the country.",
     ],
     image: "/images/home/lets-understand/logistics.png",
+    link: "/blogs/low-efficient-logistics-india-taurus-organic",
   },
 ];
 
@@ -42,8 +47,8 @@ const LetsCardData = [
       <div className="container flex flex-col justify-center items-center p-10">
         {/* Lets Understand Section Heading */}
         <div className="letsUnderstandSecHeading flex flex-col gap-0 justify-center items-center mb-14 ">
-          <h2 className="text-4xl font-bold heading">Let's Understand</h2>
-          <h3 className="text-4xl font-extralight lightText">
+          <h2 className=" font-bold heading">Let's Understand</h2>
+          <h3 className="font-extralight lightText">
             From where the number came
           </h3>
         </div>
